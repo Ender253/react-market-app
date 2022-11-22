@@ -1,0 +1,25 @@
+{
+  "products_a":{
+    "m1":{
+      "name": "Acer Nitro 5 AN515-45 Gaming Laptop with AMD Ryzen™ 5 5600H processor up to 4.20 GHz, Full HD, IPS, 144Hz, 16GB, 512GB SSD, NVIDIA® GeForce GTX™ 1650 4GB, NO OS, Black",
+      "description": "Dominate the gaming world with the combined power of an AMD Ryzen processor and NVIDIA® GeForce GTX™ graphics processors. Configure your laptop for maximum speed and massive storage space with two slots for M.2 PCIe/SATA1 SSDs and up to 32GB of DDR4 3200 RAM."
+    },
+    "m2":{
+      "name": "Mobile phone Apple iPhone 14 Pro, 128GB, 5G, Deep Purple",
+      "description": "A magical way to interact with the iPhone. A vital safety feature, designed to save lives. An innovative 48MP main camera. Plus a display twice as bright in sunlight. All powered by the most advanced chip in any smartphone."
+    },
+    "m3":{
+      "name": "Solid State Drive (SSD) Samsung 980 1TB, NVMe, M.2.",
+      "description": "It's time to maximize your PC's potential with the 980. Whether you need a gaming boost or a smooth graphics-heavy workflow, the 980 is the smart choice for outstanding SSD performance, and it's all backed by an NVMe and PCIe 3.0 technology."
+    },
+    "m4":{
+      "name": "Monitor Curved Gaming LED VA AOC AGON 35 in, WQHD, DisplayPort, 200Hz, HDR, NVIDIA G-Sync, Black/Red, Pivot, AG353UCG",
+      "description": "NVIDIA's G-SYNC HDR technology guarantees a smooth and fluid game even when the frames per second fall below a certain threshold, eliminating distortion. By aligning your graphics card's FPS with your monitor's refresh rate, G-SYNC delivers consistent performance whenever your system can't"
+    },
+    "m5":{
+      "name": "Consola PlayStation 5",
+      "description": "The PS5™ console unleashes new gaming possibilities that you never anticipated. Experience lightning-fast loading with an ultra-fast SSD, deeper immersion with haptic feedback compatibility, adaptive triggers and 3D sound, and a new generation of incredible PlayStation® games."
+    }
+  }
+  
+}

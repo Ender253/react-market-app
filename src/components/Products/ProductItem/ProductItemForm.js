@@ -2,11 +2,15 @@ import { useRef, useState } from "react";
 import Input from "../../UI/Input";
 import classes from "./ProductItemForm.module.css";
 
+
 import React from "react";
 
 const ProductItemForm = (props) => {
   const amountInputRef = useRef();
   const [amountIsValid, setAmountIsValid] = useState(true);
+
+
+    
 
   const submitHandler = (event) => {
     event.preventDefault();

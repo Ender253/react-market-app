@@ -2,11 +2,14 @@ import classes from "./AvailableProducts.module.css";
 import Card from "../UI/Card";
 import ProductItem from "./ProductItem/ProductItem";
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const AvailableProducts = () => {
   const [products, setProducts] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState();
+
+  const { t } = useTranslation();
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -45,6 +48,21 @@ const AvailableProducts = () => {
       });
   }, []);
 
+  const productsData = t('products_a', { returnObjects: true });
+
+  const productList = products.map((product) => {
+    const { name, description } = productsData[product.id] || {};
+    return (
+      <ProductItem
+        id={product.id}
+        key={product.id}
+        name={name}
+        description={description}
+        price={product.price}
+      />
+    );
+  });
+
   if (isLoading) {
     return (
       <section className={classes.ProductsLoading}>
@@ -60,16 +78,6 @@ const AvailableProducts = () => {
       </section>
     );
   }
-
-  const productList = products.map((product) => (
-    <ProductItem
-      id={product.id}
-      key={product.id}
-      name={product.name}
-      description={product.description}
-      price={product.price}
-    />
-  ));
 
   return (
     <section className={classes.products}>

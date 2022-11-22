@@ -6,7 +6,7 @@ const Products = (props) => {
     <React.Fragment>
       <AvailableProducts />
     </React.Fragment>
-  );
+  ); 
 };
 
 export default Products;

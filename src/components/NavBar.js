@@ -1,6 +1,7 @@
 import React from "react";
 import classes from "./NavBar.module.css";
 import NavCartButton from "./NavCartButton";
+import DropdownButtonLanguage from "./UI/DropDownButton";
 
 function NavBar(props) {
   return (
@@ -29,6 +30,7 @@ function NavBar(props) {
             
           </div>
         </div>
+        <DropdownButtonLanguage />
         <NavCartButton onClick={props.onShowCart}/>
       </div>
       

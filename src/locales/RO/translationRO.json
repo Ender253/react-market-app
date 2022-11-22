@@ -1,0 +1,26 @@
+{
+    "products_a":{
+      "m1":{
+        "name": "Laptop Gaming Acer Nitro 5 AN515-45 cu procesor AMD Ryzen™ 5 5600H pana la 4.20 GHz, 15.6 in, Full HD, IPS, 144Hz, 16GB, 512GB SSD, NVIDIA® GeForce GTX™ 1650 4GB, NO OS, Black",
+        "description": "Domina lumea jocurilor cu puterea combinata a unui procesor AMD Ryzen si a procesoarelor grafice NVIDIA® GeForce GTX™. Configureaza-ti laptopul pentru viteza maxima si spatiu de stocare masiv cu doua sloturi pentru SSD-uri M.2 PCIe/SATA1 si pana la 32GB de RAM DDR4 3200."
+      },
+      "m2":{
+        "name": "Telefon mobil Apple iPhone 14 Pro, 128GB, 5G, Deep Purple",
+        "description": "O modalitate magica de a interactiona cu iPhone. O functionalitate vitala de siguranta, conceputa pentru a salva vieti. O camera principala inovatoare de 48MP. Plus un afisaj de doua ori mai stralucitor in lumina soarelui. Toate propulsate de cel mai avansat cip din echiparea vreunui smartphone."
+      },
+      "m3":{
+        "name": "Solid State Drive (SSD) Samsung 980 1TB, NVMe, M.2.",
+        "description": "Este timpul sa maximizati potentialul PC-ului dvs. cu 980. Fie ca aveti nevoie de un impuls pentru jocuri sau de un flux de lucru fara probleme pentru o grafica grea, 980 este alegerea inteligenta pentru performante SSD remarcabile si totul este sustinut de o interfata NVMe si tehnologie PCIe 3.0."
+      },
+      "m4":{
+        "name": "Monitor Curbat Gaming LED VA AOC AGON 35 inch, WQHD, DisplayPort, 200Hz, HDR, NVIDIA G-Sync, Negru/Rosu, Pivot, AG353UCG",
+        "description": "Tehnologia G-SYNC HDR de la NVIDIA garanteaza un joc lin si fluid chiar si atunci cand cadrele pe secunda scad sub un anumit prag, eliminand denaturarea. Prin alinierea numarului FPS ale placii dvs. video cu rata de refresh a monitorului, G-SYNC ofera performante constante ori de cate ori sistemul nu poate"
+      },
+      "m5":{
+        "name": "Consola PlayStation 5",
+        "description": "Consola PS5™ dezlantuie noi posibilitati de gaming pe care nu le-ai anticipat niciodata.     Experimenteaza incarcare fulgeratoare cu un SSD ultra-rapid, imersiune mai profunda cu compatibilitate pentru feedback haptic, declansatoare adaptabile si sunet 3D, precum si o noua generatie de jocuri PlayStation® incredibile."
+      }
+    }
+    
+  }
+  

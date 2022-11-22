@@ -1,21 +1,23 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState, useMemo } from "react";
 import CartContext from "../store/cart-context";
 import CartIcon from "./Cart/CartIcon";
 import classes from "./NavCartButton.module.css";
 
 const NavCartButton = (props) => {
   const [buttonIsHighLighted, setButtonIsHighLighted] = useState(false);
-  const cartCxt = useContext(CartContext);
-  const { items } = cartCxt;
-  const numberOfCartItems = items.reduce((currentNumber, item) => {
-    return currentNumber + item.amount;
-  }, 0);
+  const { items } = useContext(CartContext);
 
-  const btnClasses = `${classes.button} ${
+  const numberOfCartItems = useMemo(()=>items.reduce((currentNumber, item) => {
+    return currentNumber + item.amount;
+  }, 0),[items]);
+
+  const btnClasses = useMemo(()=>`${classes.button} ${
     buttonIsHighLighted ? classes.bump : ""
-  }`;
+  }`,[buttonIsHighLighted]);
+  
   useEffect(() => {
-    if (items.length === 0) {
+    console.log(items.length);
+    if (items.length < 1) {
       return;
     }
     setButtonIsHighLighted(true);

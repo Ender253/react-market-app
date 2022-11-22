@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.css";
 
 import { useState } from "react";
 import Cart from "./components/Cart/Cart";
+import './i18n'
 
 import CartProvider from "./store/CartProvider";
 import ControlledCarousel from "./components/Carousel";
