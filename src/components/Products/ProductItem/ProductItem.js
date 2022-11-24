@@ -1,6 +1,7 @@
 import { useContext } from "react";
 
 import CartContext from "../../../store/cart-context";
+import { useCartEventDispatch } from "../../Cart/CartEvent";
 import classes from "./ProductItem.module.css";
 import ProductItemForm from "./ProductItemForm";
 
@@ -9,7 +10,9 @@ const ProductItem = (props) => {
   const cartCtx = useContext(CartContext);
   const price = `RON ${props.price.toFixed(2)}`;
 
+  const addItemToCard = useCartEventDispatch()
   const addToCartHandler = (amount) => {
+    addItemToCard();
     cartCtx.addItem({
       id: props.id,
       name: props.name,
