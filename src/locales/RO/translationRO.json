@@ -19,8 +19,17 @@
       "m5":{
         "name": "Consola PlayStation 5",
         "description": "Consola PS5™ dezlantuie noi posibilitati de gaming pe care nu le-ai anticipat niciodata.     Experimenteaza incarcare fulgeratoare cu un SSD ultra-rapid, imersiune mai profunda cu compatibilitate pentru feedback haptic, declansatoare adaptabile si sunet 3D, precum si o noua generatie de jocuri PlayStation® incredibile."
+      },
+      "m6":{
+        "name":"Telefon mobil Samsung Galaxy S22 Ultra, Dual SIM, 256GB, 12GB RAM, 5G, Phantom Black",
+        "description":"Fa cunostinta cu Galaxy S22 Ultra, dotat cu cele mai puternice caracteristici Note. Are un design subtire si indraznet, iar camera liniara, accentuata de inelele oglindite ale obiectivului, pare sa pluteasca pe loc."
+      },
+      "m7":{
+        "name":"Consola Microsoft Xbox Series X, 1TB, Negru",
+        "description":"Experimentati viteza si performanta de ultima generatie cu Xbox Velocity Architecture, alimentat de un SSD personalizat si de un software integrat. schimbati fara probleme intre mai multe jocuri jucate recent intr-un flash cu Quick Resume."
       }
-    }
+    },
     
+  "price":"RON {{amount}}"
   }
   

@@ -1,18 +1,18 @@
-import { useContext,  useMemo } from "react";
-import CartContext from "../store/cart-context";
+import { useMemo } from "react";
+import { useSelector } from "react-redux";
+
+import { getCartAmount, getCartItems } from "../store/KartProvider";
 import CartEvent from "./Cart/CartEvent";
 import CartIcon from "./Cart/CartIcon";
 import classes from "./NavCartButton.module.css";
 
 const NavCartButton = (props) => {
- 
-  const { items } = useContext(CartContext);
+  const items = useSelector(getCartItems);
 
-  console.log(props);
   const numberOfCartItems = useMemo(
     () =>
       items.reduce((currentNumber, item) => {
-        return currentNumber + item.amount;
+        return currentNumber + item.quantity;
       }, 0),
     [items]
   );
@@ -21,8 +21,6 @@ const NavCartButton = (props) => {
     () => `${classes.button} ${props.addedToCart ? classes.bump : ""}`,
     [props.addedToCart]
   );
-
-  
 
   return (
     <button className={btnClasses} onClick={props.onClick}>

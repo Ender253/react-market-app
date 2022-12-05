@@ -1,0 +1,12 @@
+.dropdown{
+    margin-right: 60px;
+    
+}
+.catLoading {
+    text-align: center;
+    color: white;
+  }
+  .catError {
+    text-align: center;
+    color: red;
+  }

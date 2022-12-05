@@ -19,7 +19,15 @@
     "m5":{
       "name": "Consola PlayStation 5",
       "description": "The PS5™ console unleashes new gaming possibilities that you never anticipated. Experience lightning-fast loading with an ultra-fast SSD, deeper immersion with haptic feedback compatibility, adaptive triggers and 3D sound, and a new generation of incredible PlayStation® games."
+    },
+    "m6":{
+      "name":"Mobile phone Samsung Galaxy S22 Ultra, Dual SIM, 256GB, 12GB RAM, 5G, Phantom Black",
+      "description":"Meet the Galaxy S22 Ultra, equipped with the most powerful Note features. It has a slim and bold design, and the linear camera, accentuated by the mirrored lens rings, seems to float in place."
+    },
+    "m7":{
+      "name":"Microsoft Xbox Series X Console, 1TB, Black",
+      "description":"Experience state-of-the-art speed and performance with Xbox Velocity Architecture, powered by a custom SSD and integrated software. Seamlessly switch between multiple recently played games in a flash with Quick Resume."
     }
-  }
-  
+  },
+  "price":"{{amount}} USD"  
 }

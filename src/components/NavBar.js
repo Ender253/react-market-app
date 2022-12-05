@@ -1,9 +1,13 @@
 import React from "react";
 import classes from "./NavBar.module.css";
 import NavCartButton from "./NavCartButton";
-import DropdownButtonLanguage from "./UI/DropDownButton";
+import DropdownButtonLanguage from "./LanguageDd";
+import ProductCategories from "./Products/ProductItem/ProductCategories";
 
 function NavBar(props) {
+const {onShowCart, ...rest} = props;
+
+
   return (
     <nav>
       <div className={classes.navbar_container}>
@@ -31,7 +35,8 @@ function NavBar(props) {
           </div>
         </div>
         <DropdownButtonLanguage />
-        <NavCartButton onClick={props.onShowCart}/>
+        <ProductCategories {...rest}/>
+        <NavCartButton onClick={onShowCart}/>
       </div>
       
     </nav>

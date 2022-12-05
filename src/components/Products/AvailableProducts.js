@@ -1,10 +1,12 @@
 import classes from "./AvailableProducts.module.css";
 import Card from "../UI/Card";
 import ProductItem from "./ProductItem/ProductItem";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
-const AvailableProducts = () => {
+const AvailableProducts = (props) => {
+  const { categories, category } = props;
+
   const [products, setProducts] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState();
@@ -25,18 +27,7 @@ const AvailableProducts = () => {
 
       const data = await response.json();
 
-      const loadedProducts = [];
-
-      for (const key in data) {
-        loadedProducts.push({
-          id: key,
-          name: data[key].name,
-          description: data[key].description,
-          price: data[key].price,
-        });
-      }
-
-      setProducts(loadedProducts);
+      setProducts(Object.keys(data).map((key) => ({ ...data[key], id: key })));
       setIsLoading(false);
     };
 
@@ -48,9 +39,60 @@ const AvailableProducts = () => {
       });
   }, []);
 
-  const productsData = t('products_a', { returnObjects: true });
+  const filterCategories = useCallback(
+    (categoryId, data = categories, returnCategory = null) => {
+      data.find((category) => {
+        if (category.child)
+          returnCategory = filterCategories(
+            categoryId,
+            category.child,
+            returnCategory
+          );
+        if (category.id === categoryId) return (returnCategory = category);
 
-  const productList = products.map((product) => {
+        return false;
+      });
+
+      return returnCategory;
+    },
+    [categories]
+  );
+
+  const isSubcategory = useCallback((category, subCategory) => {
+    if (category.id === subCategory.id) return true;
+
+    if (category.child)
+      return category.child.find((child) => isSubcategory(child, subCategory));
+
+    return false;
+  }, []);
+
+  const isInCategories = useCallback(
+    (categoryId, productCategoryId) => {
+      const category = filterCategories(categoryId);
+      const productCategory = filterCategories(productCategoryId);
+
+      return (
+        category && productCategory && isSubcategory(category, productCategory)
+      );
+    },
+    [filterCategories, isSubcategory]
+  );
+
+  const filterProducts = useCallback(
+    (product) => {
+      if (!category) {
+        return true;
+      }
+
+      return isInCategories(category, product.categoryId);
+    },
+    [category, isInCategories]
+  );
+
+  const productsData = t("products_a", { returnObjects: true });
+
+  const productList = products.filter(filterProducts).map((product) => {
     const { name, description } = productsData[product.id] || {};
     return (
       <ProductItem

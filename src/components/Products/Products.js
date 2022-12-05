@@ -4,7 +4,7 @@ import AvailableProducts from "./AvailableProducts";
 const Products = (props) => {
   return (
     <React.Fragment>
-      <AvailableProducts />
+      <AvailableProducts {...props} />
     </React.Fragment>
   ); 
 };

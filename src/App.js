@@ -6,9 +6,10 @@ import { useState } from "react";
 import Cart from "./components/Cart/Cart";
 import './i18n'
 
-import CartProvider from "./store/CartProvider";
+
 import ControlledCarousel from "./components/Carousel";
 import Products from "./components/Products/Products";
+import { useProductCategories } from "./components/Products/ProductItem/ProductCategories";
 
 function App() {
   const [cartIsShown, setCartIsShown] = useState(false);
@@ -20,13 +21,16 @@ function App() {
   const hideCartHandler = () => {
     setCartIsShown(false);
   };
+
+  const categoriesHook = useProductCategories();
+
   return (
-    <CartProvider>
+    <>
       {cartIsShown && <Cart onClose={hideCartHandler} />}
-      <NavBar onShowCart={showCartHandler} />
+      <NavBar onShowCart={showCartHandler} {...categoriesHook} />
       <ControlledCarousel />
-      <Products />
-    </CartProvider>
+      <Products {...categoriesHook} />
+    </>
   );
 }
 
