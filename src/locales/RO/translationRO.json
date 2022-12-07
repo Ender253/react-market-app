@@ -27,9 +27,17 @@
       "m7":{
         "name":"Consola Microsoft Xbox Series X, 1TB, Negru",
         "description":"Experimentati viteza si performanta de ultima generatie cu Xbox Velocity Architecture, alimentat de un SSD personalizat si de un software integrat. schimbati fara probleme intre mai multe jocuri jucate recent intr-un flash cu Quick Resume."
-      }
-    },
+      },"m8":{
+        "name":"Apple iPad Pro 12.9 inch (2022) 6th Gen, 2TB, Cellular, Space Grey",
+        "description":"Viteza incredibila, grafica uimitoare si autonomie pentru toata ziua pe baterie. Spulbera termenele limita, creeaza ca un profesionist si joaca titluri demne de consolele dedicate."
+      },
+      "m9":{
+        "name":"Laptop Gaming MSI Raider GE66 Deluxe 12UHS-480IT, Intel Core i9-12900HK pana la 5.0GHz, 15.6 inch 4K 120Hz, 16GB RAM, 2TB SSD, Nvidia GeForce RTX 3080Ti 16GB, Windows 11 Pro, Silver",
+        "description":"Laptopurile noastre pentru jocuri sunt personalizate si foarte optimizate pentru jucatori; display-ul are o rata de reimprospatare ridicata si o grafica neteda, permitandu-va sa experimentati urmatorul nivel de joc"
+    }
     
+  
+  },
   "price":"RON {{amount}}"
-  }
+}
   

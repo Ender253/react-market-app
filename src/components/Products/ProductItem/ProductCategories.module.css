@@ -1,7 +1,12 @@
 .dropdown{
     margin-right: 60px;
-    
 }
+
+.dropdownElement:hover{
+  background-color: transparent !important;
+  cursor: pointer;
+}
+
 .catLoading {
     text-align: center;
     color: white;

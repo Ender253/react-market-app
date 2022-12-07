@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { useCartEventDispatch } from "../../Cart/CartEvent";
 import classes from "./ProductItem.module.css";
 import ProductItemForm from "./ProductItemForm";
@@ -23,7 +24,7 @@ const {t} = useTranslation();
       <div>
         <h3>{props.name}</h3>
         <div className={classes.description}>{props.description}</div>
-        <div className={classes.price}>{  t('price',{amount: props.price.toFixed(2)})        }</div>
+        <div className={classes.price}>{  t('price',{amount: props.price.toFixed(2)})  }</div>
       </div>
       <div>
         <ProductItemForm id={props.id} onAddToCart={addToCartHandler} />

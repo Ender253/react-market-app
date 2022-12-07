@@ -9,7 +9,6 @@ import './i18n'
 
 import ControlledCarousel from "./components/Carousel";
 import Products from "./components/Products/Products";
-import { useProductCategories } from "./components/Products/ProductItem/ProductCategories";
 
 function App() {
   const [cartIsShown, setCartIsShown] = useState(false);
@@ -22,14 +21,13 @@ function App() {
     setCartIsShown(false);
   };
 
-  const categoriesHook = useProductCategories();
 
   return (
     <>
       {cartIsShown && <Cart onClose={hideCartHandler} />}
-      <NavBar onShowCart={showCartHandler} {...categoriesHook} />
+      <NavBar onShowCart={showCartHandler} />
       <ControlledCarousel />
-      <Products {...categoriesHook} />
+      <Products />
     </>
   );
 }

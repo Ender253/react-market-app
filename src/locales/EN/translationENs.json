@@ -1,33 +1,41 @@
 {
-  "products_a":{
-    "m1":{
+  "products_a": {
+    "m1": {
       "name": "Acer Nitro 5 AN515-45 Gaming Laptop with AMD Ryzen™ 5 5600H processor up to 4.20 GHz, Full HD, IPS, 144Hz, 16GB, 512GB SSD, NVIDIA® GeForce GTX™ 1650 4GB, NO OS, Black",
       "description": "Dominate the gaming world with the combined power of an AMD Ryzen processor and NVIDIA® GeForce GTX™ graphics processors. Configure your laptop for maximum speed and massive storage space with two slots for M.2 PCIe/SATA1 SSDs and up to 32GB of DDR4 3200 RAM."
     },
-    "m2":{
+    "m2": {
       "name": "Mobile phone Apple iPhone 14 Pro, 128GB, 5G, Deep Purple",
       "description": "A magical way to interact with the iPhone. A vital safety feature, designed to save lives. An innovative 48MP main camera. Plus a display twice as bright in sunlight. All powered by the most advanced chip in any smartphone."
     },
-    "m3":{
+    "m3": {
       "name": "Solid State Drive (SSD) Samsung 980 1TB, NVMe, M.2.",
       "description": "It's time to maximize your PC's potential with the 980. Whether you need a gaming boost or a smooth graphics-heavy workflow, the 980 is the smart choice for outstanding SSD performance, and it's all backed by an NVMe and PCIe 3.0 technology."
     },
-    "m4":{
+    "m4": {
       "name": "Monitor Curved Gaming LED VA AOC AGON 35 in, WQHD, DisplayPort, 200Hz, HDR, NVIDIA G-Sync, Black/Red, Pivot, AG353UCG",
       "description": "NVIDIA's G-SYNC HDR technology guarantees a smooth and fluid game even when the frames per second fall below a certain threshold, eliminating distortion. By aligning your graphics card's FPS with your monitor's refresh rate, G-SYNC delivers consistent performance whenever your system can't"
     },
-    "m5":{
+    "m5": {
       "name": "Consola PlayStation 5",
       "description": "The PS5™ console unleashes new gaming possibilities that you never anticipated. Experience lightning-fast loading with an ultra-fast SSD, deeper immersion with haptic feedback compatibility, adaptive triggers and 3D sound, and a new generation of incredible PlayStation® games."
     },
-    "m6":{
-      "name":"Mobile phone Samsung Galaxy S22 Ultra, Dual SIM, 256GB, 12GB RAM, 5G, Phantom Black",
-      "description":"Meet the Galaxy S22 Ultra, equipped with the most powerful Note features. It has a slim and bold design, and the linear camera, accentuated by the mirrored lens rings, seems to float in place."
+    "m6": {
+      "name": "Mobile phone Samsung Galaxy S22 Ultra, Dual SIM, 256GB, 12GB RAM, 5G, Phantom Black",
+      "description": "Meet the Galaxy S22 Ultra, equipped with the most powerful Note features. It has a slim and bold design, and the linear camera, accentuated by the mirrored lens rings, seems to float in place."
     },
-    "m7":{
-      "name":"Microsoft Xbox Series X Console, 1TB, Black",
-      "description":"Experience state-of-the-art speed and performance with Xbox Velocity Architecture, powered by a custom SSD and integrated software. Seamlessly switch between multiple recently played games in a flash with Quick Resume."
+    "m7": {
+      "name": "Microsoft Xbox Series X Console, 1TB, Black",
+      "description": "Experience state-of-the-art speed and performance with Xbox Velocity Architecture, powered by a custom SSD and integrated software. Seamlessly switch between multiple recently played games in a flash with Quick Resume."
+    },
+    "m8": {
+      "name": "Apple iPad Pro 12.9 inch (2022) 6th Gen, 2TB, Cellular, Space Grey",
+      "description": "Incredible speed, amazing graphics and autonomy for the whole day on the battery. Crush deadlines, create like a pro and play titles worthy of dedicated consoles."
+    },
+    "m9": {
+      "name": "Laptop Gaming MSI Raider GE66 Deluxe 12UHS-480IT, Intel Core i9-12900HK up to 5.0GHz, 15.6 inch 4K 120Hz, 16GB RAM, 2TB SSD, Nvidia GeForce RTX 3080Ti 16GB, Windows 11 Pro, Silver",
+      "description": "Laptopurile noastre pentru jocuri sunt personalizate si foarte optimizate pentru jucatori; display-ul are o rata de reimprospatare ridicata si o grafica neteda, permitandu-va sa experimentati urmatorul nivel de joc"
     }
   },
-  "price":"{{amount}} USD"  
+  "price": "{{amount}} USD"
 }
